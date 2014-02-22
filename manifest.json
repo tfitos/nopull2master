@@ -5,9 +5,8 @@
   "description": "to avoid the pull request to master",
   "version": "1.0",
   "content_scripts": [{
-    "matches": ["http://www.google.com/*"],
-    "css": ["mystyles.css"],
-    "js": ["jquery.js", "myscript.js"]
+    "matches": ["https://github.com/tfitos/nopull2master/compare/*"],
+    "js": ["jquery-2.1.0.min.js", "nopull2master.js"]
   }],
   "permissions": [
     "https://secure.flickr.com/"
