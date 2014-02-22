@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "no pull 2 master",
+  "description": "to avoid the pull request to master",
+  "version": "1.0",
+
+  "permissions": [
+    "https://secure.flickr.com/"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
