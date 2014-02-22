@@ -4,7 +4,11 @@
   "name": "no pull 2 master",
   "description": "to avoid the pull request to master",
   "version": "1.0",
-
+  "content_scripts": [{
+    "matches": ["http://www.google.com/*"],
+    "css": ["mystyles.css"],
+    "js": ["jquery.js", "myscript.js"]
+  }],
   "permissions": [
     "https://secure.flickr.com/"
   ],
