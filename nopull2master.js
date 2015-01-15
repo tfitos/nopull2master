@@ -1,19 +1,17 @@
 var $ = jQuery;
 
-function merge2master(i, text) {
-	return (i === 0 && 'master' === text);
+function isMerge2master() {
+	return window.location.href.indexOf('compare/master...') !== -1;
 }
 
 function makeBackgroundRed() {
-	$('.range-editor .range').css('background-color', 'red');
+	$('.range-editor').css('background-color', 'red');
 }
 
 function main() {
-	$('.branch-name').each(function(i) {
-		if (merge2master(i, $(this).text().trim())) {
-			makeBackgroundRed();
-		}
-	});
+	if (isMerge2master()) {
+		makeBackgroundRed();
+	}
 }
 
 function watchPage(fn) {
